@@ -32,7 +32,7 @@ body {
 #hero {
     width: 100%; /* makes the hero image take up the entire width of the container */
     height: 500px;
-    background-image: url("/MyResume/images/welcome.webp");
+    background-image: url("/images/welcome.webp");
     background-size: cover; /* makes the background image cover the entire width and height of the container */
     background-repeat: no-repeat;
     background-position: center; /* centers the background image to make the cover effect look balanced */
@@ -227,7 +227,7 @@ p a:hover{
 #hero2 {
     width: 830px;
     height: 450px;
-    background-image: url("/MyResume/images/weGotQuestions.webp");
+    background-image: url("/images/weGotQuestions.webp");
     background-size: contain;
     background-repeat: no-repeat;
     margin: 0;
@@ -390,22 +390,29 @@ legend{
     color: white;
 }
 
-.faq-table {
-    text-align: center;
-    min-width: 500px;
-    max-width: 600px;
-
+.wrapper-main{
+    width: 900px;
+    margin: 0 auto;
 }
 
-.table-bordered {
-    border: 5px solid #000; /* Bold border for the whole table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
   }
 
-  .table-bordered-bold th,
-  .table-bordered-bold td {
-    border: 3px solid #000; /* Bold border for table cells */
+/* adds styling to the table headers */
+  th {
+    background-color: rgba(239, 239, 16, 0.998);
+    color: rgb(11, 33, 102);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
   }
 
-th, td{
-    text-align: center;
-}
+  /* adds styling to the table data cells  */
+  td {
+    background-color: rgba(241, 241, 124, 0.993);
+    color: rgb(11, 33, 102);
+    font-size: 18px;
+    padding: 10px;
+  }
