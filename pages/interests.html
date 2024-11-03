@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moe's Interests</title>
+    <link rel="stylesheet" href="/MyResume/styles/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+
+
+/* max-width makes it more responsive */
+/* Sets the top and bottom margins and left and right margins to auto, which centers the section within its container. */
+        .form-adventure-border {
+            border-radius: 6px;
+            padding: 2%;
+            margin: 2% auto 7% auto;
+            max-width: 450px;
+            display: flex;
+            justify-content: center;
+        
+        }
+
+            /* adding padding around the select box which is outside of Sailing */
+        #adventure-dropdown {
+            padding: 10px 10px; 
+            color:  rgba(239, 239, 16, 0.998);
+            background-color:  rgb(11, 33, 102);
+            border: 3px solid  rgba(239, 239, 16, 0.998);
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 2%;
+            
+        }
+
+        #adventure-submit {
+            padding: 10px 10px; 
+            color: rgb(11, 33, 102);  
+            background-color:  rgba(239, 239, 16, 0.998);
+            border: 3px solid  rgb(11, 33, 102);
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 2%;
+
+        }
+
+    </style>
+</head>
+<body>
+    <!-- navigation bar -->
+    <nav id="main-nav">
+        <ul class="nav-list">
+            <li class="nav-item"><a class="nav-a" href="/MyResume/pages/index.html">ABOUT ME</a></li>
+            <li class="nav-item"><a class="nav-a" href="/MyResume/pages/interests.html">INTEREST</a></li>
+            <li class="nav-item"><a class="nav-a" href="/MyResume/pages/faqs.html">FAQS</a></li>  
+        </ul>
+    </nav>
+    <section>
+        <h2 class="section-heading">BOXING</h2>
+        <img src="/MyResume/images/rockystatue.jpg" alt="Moe standing next to Rocky Statue" class="img-collection img-slideleft">
+        <img src="/MyResume/images/rockySteps.jpg" alt="Moe sitting on the famous steps from the Rocky 1 movie" class="img-collection img-slideright">
+        <p>
+            "I’ve been throwing punches and learning the art of self-defense for a solid 10 years now, covering everything from Krav Maga to Taekwondo, Jiu-Jitsu, Muay Thai, and boxing. 
+            Combat sports are my thing whether I’m training, watching fights ringside, or cheering from the couch.
+        </p>
+        <p>
+            One of my highlights? I had my Rocky moment in Philadelphia! Yep, I ran up the iconic steps, took a picture with the Rocky statue, and tried not to look too winded. 
+            I’d say I felt like a champion… at least until the jog back down!"
+        </p>
+
+    </section>
+    <section>
+        <h2 class="section-heading">FLAG FOOTBALL</h2>
+        <img src="/MyResume/images/flagfootball.jpg" alt="Moe playing flag football about to sack the quarterback" class="img-collection img-shrink">
+        <img src="/MyResume/images/moeAnkle.jpg" alt="Moe on crutches from an accident in flag football" class="img-collection img-shrink">
+        <p>
+            This is my rookie year playing football, and I absolutely lovvve it! I’ve somehow managed to snag MVP twice already and, yes, also managed to break my ankle (but hey, no pain, no gain, right?). 
+            Even with that little setback, my love for the game is stronger than ever. I can’t wait to see this sport hit the Olympic stage one day.
+        </p>
+
+    </section>
+    <section>
+        <h2 class="section-heading">TRAVEL</h2>
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="/MyResume/images/sjrelic.jpg" class="img-slideshow" alt="Moe standing infront of the SJO welcome sign">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>San Jose, Costa Rica</h5>
+                  <p>First stop, San Jose Tour.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/MyResume/images/sjMoney.jpg" alt="Picture of SJO Money" class="img-slideshow">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Costa Rican Colon</h5>
+                  <p>Spending money in Costa Rica</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="/MyResume/images/coffeetour.jpg" class="img-slideshow" alt="Moe on a coffee tour in costa rica">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Coffee Tour</h5>
+                  <p>Some of the Best Coffee</p>
+                </div>
+              </div>
+              <div class="carousel-item active">
+                <img src="/MyResume/images/resort.jpg" class="img-slideshow" alt="Moe having breakfast at the resort hotel in Costa Rica">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Costa Rica Resort</h5>
+                  <p>Beautiful View.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <p>
+            I’m a travel enthusiast and have checked off all the big spots in the U.S., from NYC’s bustle to New Orleans’ jazz, Miami’s beaches, and LA’s vibes. 
+            My best trip, hands down? Costa Rica! I went to study Spanish, fell in love with the place… and maybe picked up a little traffic ticket (court appearance included, but that’s a story for later). 
+            
+        </p>
+        <p>
+            Next up on my bucket list: backpacking through South America, where I’ll hopefully avoid any surprise souvenirs from local law enforcement!
+        </p>
+    </section>
+
+
+            
+    <section class=>
+        <h2 class="section-heading">TRAVEL ADVENTURE POLL</h2>
+        <label for="">Choose a way of transportation on a 30-Day Adventure</label>
+        <form action="#" class="form-adventure-border"> <!-- form styles the background and the border -->
+            <select  id="adventure-dropdown" name="" >  <!-- select styles the dropdown box -->
+                <option value="sailing">Sailing</option>
+                <option value="hotairballon">Hot Air Ballon</option>
+                <option value="backpacking">Backpacking</option>
+                <option value="hitchhiking">Hitchhiking</option>
+            </select>
+            <br><br>
+            <input type="submit" value="submit" id="adventure-submit"> <!-- input styles the submit button -->
+        </form>
+    </section>
+
+
+
+    <footer>
+        <!-- footer navigation bar -->
+            <nav id="footer-nav-main">
+                <ul class="footer-nav-list">
+                    <li class="footer-nav-item"><a class="footer-nav-a" href="/MyResume/pages/index.html">Terms and Conditions</a></li>
+                    <li class="footer-nav-item"><a class="footer-nav-a"  href="/MyResume/pages/interests.html">2024 Copyright: Moe Holder</a></li>
+                    <li class="footer-nav-item"><a class="footer-nav-a" href="/MyResume/pages/faqs.html">Cookie Policy</a></li>  
+                </ul>
+             </nav>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+</body>
+</html>
