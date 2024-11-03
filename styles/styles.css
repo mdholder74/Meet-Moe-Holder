@@ -1,0 +1,411 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Kablammo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Happy+Monkey&family=Kablammo&display=swap');
+
+html {
+    scroll-behavior: smooth; /* makes the scrolling smooth when the user clicks on a link in the navigation bar */
+}
+
+*{
+    font-family: "Delius", Arial, sans-serif; /* sets the font family for the entire body of the webpage with backups */
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+
+.section-heading {
+  font-family: "Kablammo", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "MORF" 0;
+}
+
+body {
+
+    background-image: linear-gradient(90deg, rgba(239, 239, 16, 0.998) 0%, rgba(11, 33, 102, 0.998) 100%);
+    
+  }
+
+#hero {
+    width: 100%; /* makes the hero image take up the entire width of the container */
+    height: 500px;
+    background-image: url("/MyResume/images/welcome.webp");
+    background-size: cover; /* makes the background image cover the entire width and height of the container */
+    background-repeat: no-repeat;
+    background-position: center; /* centers the background image to make the cover effect look balanced */
+    margin: 0; 
+}
+
+#primary-nav {
+    margin: 0;
+}
+
+.nav-list {
+    list-style-type: none; /* removes the bullets from the list items in the navigation bar. */
+    text-align: center;
+    background-color: rgba(239, 239, 16, 0.998);
+    margin: 0; /* Removes default margin */
+    padding: 0; /* No extra padding */
+    
+}
+
+
+.nav-item {
+    display: inline; /* makes the list items in the navigation bar display horizontal. */
+    margin: 0 10px;
+    font-size: 50px;
+    
+}
+
+
+.nav-a {
+    font-weight: bold;
+    text-decoration: none; /* removes the underline from the links in the navigation bar and and padding */
+    color: rgb(11, 33, 102);
+    padding: 8px 32px;
+
+}
+
+nav a:hover {
+    background-color: rgb(11, 33, 102);
+    color: white;
+}
+
+    /* 
+    Applies the 'spin' animation to the #headshot element with the following parameters:
+    - Animation name: 'spin'
+    - Duration: 1000ms (1 second), the total time for one cycle of the animation
+    - Timing function: 'ease-in-out', which starts slow, speeds up in the middle, and slows down at the end
+    - Delay: 1000ms (1 second), the animation will wait 1 second before starting
+    - Iteration count: 1, so the animation will only play once
+    - Direction: 'normal', meaning the animation plays in its regular direction (start to finish)
+    - Fill mode: 'forwards', which keeps the final animation state (end of 'spin') after it completes
+    */
+
+#headshot {
+    animation: spin 1000ms ease-in-out 1000ms 1 normal forwards;
+
+}
+
+
+@keyframes spin {
+    /* Initial keyframe: starts with no rotation and a scale of 0 (invisible) */
+    0% {
+        transform: rotate(0deg) scale(0);
+    }
+    /* Midpoint keyframe: rotates the element halfway (180 degrees) and scales it up to 1.5 times its original size */
+    50% {
+        transform: rotate(180deg) scale(1.5);
+    }
+     /* Final keyframe: completes a full rotation (360 degrees) and returns the element to its original scale (1) */
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+
+section {
+    text-align: center;
+
+
+}
+
+.section-heading {
+    font-size: 32px;
+    color: rgb(11, 33, 102);
+    margin: 0;
+    padding: 20px; /*adds padding all around the heading text. */
+}
+
+.list-item{
+    list-style-type: none;
+    padding: 1%;
+}
+
+p a{
+    text-decoration: underline;
+    color: rgb(40, 39, 39);
+}
+
+p a:hover{
+    color: rgb(11, 33, 102);
+    font-weight: bold;
+}
+
+.img-slideshow {
+    width: 700px;
+    height: 500px;
+    border-radius: 3%;
+}
+
+/* Updated glow effect */
+.img-collection {
+    width: 500px;
+    height: 500px;
+    border-radius: 3%;
+    animation: glow 1000ms ease-in-out 4, left 1000ms ease-in-out 1000ms 1 forwards;
+}
+
+/* Slide animations */
+.img-slideleft {
+    animation: glow 1000ms ease-in-out 4, left 1000ms ease-in-out 1000ms 1 forwards;
+}
+
+.img-slideright {
+    animation: glow 1000ms ease-in-out 4, right 1000ms ease-in-out 1000ms 1 forwards;
+}
+
+.img-shrink {
+    animation: glow 1000ms ease-in-out 4, shrink 1000ms ease-in-out 2500ms 1 forwards;
+}
+
+/* Keyframes for all animations */
+@keyframes glow {
+    100% {
+        box-shadow: 0 0 50px rgba(16, 250, 36, 0.998);
+    }
+}
+
+@keyframes left {
+    from {
+        transform: translateX(-200%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes right {
+    from {
+        transform: translateX(200%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes shrink {
+    from {
+        transform: scale(0.1, 0.1);
+    }
+    to {
+        transform: scale(1, 1);
+    }
+}
+
+
+#footer-nav-main {
+    background-image: repeating-radial-gradient(white, white 10px, rgba(179, 179, 31, 0.774) 10px, rgba(248, 226, 27, 0.774) 20px);
+    margin: 0;
+    padding: 0;
+}
+
+.footer-nav-list{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+.footer-nav-item{
+    padding: 2%;
+    margin: 2%;
+}
+
+.footer-nav-a{
+    color: rgb(11, 33, 102);
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+#hero2 {
+    width: 830px;
+    height: 450px;
+    background-image: url("/MyResume/images/weGotQuestions.webp");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0;
+
+    
+}
+
+#form-faqs {
+    width: 830px;
+    height: 450px;
+    margin: 0;
+    font-size: 32px;
+    color: rgb(11, 33, 102);
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#input-box-faq {
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 3px solid  rgb(11, 33, 102);
+    background-color: rgba(241, 241, 124, 0.993);
+    margin: 2%;
+}
+
+.input-box-submit{
+    background-color: rgba(239, 239, 16, 0.998);
+    color: rgb(11, 33, 102);
+    font-size: 25px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 3px solid  rgb(11, 33, 102);
+    
+}
+
+.input-box-submit:hover{
+    background-color: rgb(11, 33, 102);
+    color: white;
+    cursor: pointer;
+}
+
+#faq-title{
+    text-align: center;
+    margin: 5%;
+}
+#section-faq{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    font-size: 14px;
+}
+
+#section-comedy-faq, #section-serious-faq {
+    border: 3px solid rgb(11, 33, 102);
+    width: 600px;
+    height: 450px;
+    padding: 3% 2%;
+
+}
+
+.faq-spacing{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.faq-question-text{
+    display: block;
+    position: relative;
+    font-size: large;
+    font-weight: bold;
+
+}
+
+/* creating arrow */
+.faq-question-text:after {
+    width: 10px;
+    height: 10px;
+    content: "";
+    float: right;
+    border-style: solid;
+    border-width: 2px 2px 0 0;
+    transform: rotate(135deg);
+    transition: 0.4s ease-in-out;   
+}
+
+.faq-answer{
+    line-height: 1.5;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.faq-trigger{
+    display: none;
+}
+
+.faq-trigger:checked + .faq-question-text + .faq-answer{
+
+    max-height: 300px;
+}
+
+.faq-trigger:checked + .faq-question-text::after{
+    transform: rotate(-45deg);
+    transition: 0.4;
+}
+
+fieldset{
+    text-align: center;
+    border: 5px solid rgb(11, 33, 102);
+    border-radius: 5px;
+    min-width: 200px;
+    max-width: 350px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+.section-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+}
+
+legend{
+    color: rgb(11, 33, 102);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.vibes-label{
+    display: block;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    font-weight: bold;
+}
+
+.vibes-input{
+    border: 3px solid rgb(11, 33, 102);
+    padding: 8px 10px;
+    background-color: rgba(241, 241, 124, 0.993);
+    border-radius: 5px;
+}
+
+#vibes-submit {
+    padding: 10px 10px; 
+    background-color:rgba(239, 239, 16, 0.998);
+    color: rgb(11, 33, 102);  
+    border: 3px solid  rgb(11, 33, 102);
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 2%;
+
+}
+
+#vibes-submit:hover{
+    background-color: rgb(11, 33, 102);
+    color: white;
+}
+
+.faq-table {
+    text-align: center;
+    min-width: 500px;
+    max-width: 600px;
+
+}
+
+.table-bordered {
+    border: 5px solid #000; /* Bold border for the whole table */
+  }
+
+  .table-bordered-bold th,
+  .table-bordered-bold td {
+    border: 3px solid #000; /* Bold border for table cells */
+  }
+
+th, td{
+    text-align: center;
+}
