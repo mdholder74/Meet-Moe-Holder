@@ -1,4 +1,6 @@
 
+
+
 @import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&family=Kablammo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Delius&family=Happy+Monkey&family=Kablammo&display=swap');
 
@@ -23,6 +25,11 @@ html {
     "MORF" 0;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body {
 
     background-image: linear-gradient(90deg, rgba(239, 239, 16, 0.998) 0%, rgba(11, 33, 102, 0.998) 100%);
@@ -31,16 +38,12 @@ body {
 
 #hero {
     width: 100%; /* makes the hero image take up the entire width of the container */
-    height: 500px;
+    min-height: 500px;
     background-image: url("/images/welcome.webp");
     background-size: cover; /* makes the background image cover the entire width and height of the container */
     background-repeat: no-repeat;
     background-position: center; /* centers the background image to make the cover effect look balanced */
     margin: 0; 
-}
-
-#primary-nav {
-    margin: 0;
 }
 
 .nav-list {
@@ -55,8 +58,7 @@ body {
 
 .nav-item {
     display: inline; /* makes the list items in the navigation bar display horizontal. */
-    margin: 0 10px;
-    font-size: 50px;
+    font-size: 3.5rem;
     
 }
 
@@ -65,7 +67,7 @@ body {
     font-weight: bold;
     text-decoration: none; /* removes the underline from the links in the navigation bar and and padding */
     color: rgb(11, 33, 102);
-    padding: 8px 32px;
+    padding: 1rem 2rem;
 
 }
 
@@ -114,15 +116,14 @@ section {
 }
 
 .section-heading {
-    font-size: 32px;
+    font-size: 2rem;
     color: rgb(11, 33, 102);
-    margin: 0;
-    padding: 20px; /*adds padding all around the heading text. */
+    padding: 1.5rem; /*adds padding all around the heading text. */
 }
 
 .list-item{
     list-style-type: none;
-    padding: 1%;
+    padding: 1rem;
 }
 
 p a{
@@ -212,13 +213,13 @@ p a:hover{
 
 }
 .footer-nav-item{
-    padding: 2%;
-    margin: 2%;
+    padding: 3rem;
+    margin: 2rem;
 }
 
 .footer-nav-a{
     color: rgb(11, 33, 102);
-    font-size: 25px;
+    font-size: 2rem;
     font-weight: bolder;
     background-color: rgba(255, 255, 255, 0.5);
 }
@@ -235,11 +236,15 @@ p a:hover{
     
 }
 
+#faq-frequently-asked-hero {
+font-weight: bold;
+}
+
 #form-faqs {
     width: 830px;
     height: 450px;
     margin: 0;
-    font-size: 32px;
+    font-size: 2rem;
     color: rgb(11, 33, 102);
     justify-content: center;
     align-items: center;
@@ -257,7 +262,7 @@ p a:hover{
 .input-box-submit{
     background-color: rgba(239, 239, 16, 0.998);
     color: rgb(11, 33, 102);
-    font-size: 25px;
+    font-size: 1.5rem;
     padding: 10px 20px;
     border-radius: 5px;
     border: 3px solid  rgb(11, 33, 102);
@@ -270,29 +275,31 @@ p a:hover{
     cursor: pointer;
 }
 
-#faq-title{
+#faq-frequently-asked-title{
     text-align: center;
-    margin: 5%;
+    margin: 3rem;
+    font-weight: bold;
+    font-size: 2rem;
 }
 #section-faq{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5%;
-    font-size: 14px;
+    font-size: 1.0rem;
+    margin: 4rem;
 }
 
 #section-comedy-faq, #section-serious-faq {
     border: 3px solid rgb(11, 33, 102);
     width: 600px;
     height: 450px;
-    padding: 3% 2%;
+    padding: 2rem 2rem;
 
 }
 
 .faq-spacing{
-    margin-top: 2%;
-    margin-bottom: 2%;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
 .faq-question-text{
@@ -340,10 +347,10 @@ fieldset{
     text-align: center;
     border: 5px solid rgb(11, 33, 102);
     border-radius: 5px;
-    min-width: 200px;
+    min-width: 340px;
     max-width: 350px;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    min-height: 550px;
+    margin: 0 auto;
 }
 
 
@@ -351,7 +358,8 @@ fieldset{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5%;
+    margin-top: 8rem;
+    margin-bottom: 5rem;
 }
 
 legend{
@@ -381,7 +389,7 @@ legend{
     border: 3px solid  rgb(11, 33, 102);
     border-radius: 5px;
     cursor: pointer;
-    margin: 2%;
+    margin: 1em;
 
 }
 
@@ -404,9 +412,8 @@ legend{
   th {
     background-color: rgba(239, 239, 16, 0.998);
     color: rgb(11, 33, 102);
-    font-size: 20px;
     font-weight: bold;
-    padding: 10px;
+    padding: 0.8rem;
   }
 
   /* adds styling to the table data cells  */
@@ -414,5 +421,5 @@ legend{
     background-color: rgba(241, 241, 124, 0.993);
     color: rgb(11, 33, 102);
     font-size: 18px;
-    padding: 10px;
+    padding: 0.8rem;
   }
