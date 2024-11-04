@@ -15,6 +15,7 @@ html {
 
 }
 
+/*SECTIONS*/
 
 .section-heading {
   font-family: "Kablammo", system-ui;
@@ -135,6 +136,13 @@ p a:hover{
     color: rgb(11, 33, 102);
     font-weight: bold;
 }
+
+/* ICON*/
+
+.icon-color{
+    height:1.5rem; 
+}
+
 
 .img-slideshow {
     width: 700px;
