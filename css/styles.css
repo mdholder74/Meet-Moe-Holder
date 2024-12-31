@@ -207,11 +207,44 @@ p a:hover{
     }
 }
 
+/* max-width makes it more responsive */
+/* Sets the top and bottom margins and left and right margins to auto, which centers the section within its container. */
+.form-adventure-border {
+    border-radius: 6px;
+    padding: 2%;
+    margin: 2% auto 7% auto;
+    max-width: 450px;
+    display: flex;
+    justify-content: center;
+
+}
+
+    /* adding padding around the select box which is outside of Sailing */
+#adventure-dropdown {
+    padding: 10px 10px; 
+    color:  rgba(239, 239, 16, 0.998);
+    background-color:  rgb(11, 33, 102);
+    border: 3px solid  rgba(239, 239, 16, 0.998);
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 2%;
+    
+}
+
+#adventure-submit {
+    padding: 10px 10px; 
+    color: rgb(11, 33, 102);  
+    background-color:  rgba(239, 239, 16, 0.998);
+    border: 3px solid  rgb(11, 33, 102);
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 2%;
+
+}
+
 
 #footer-nav-main {
-    background-image: repeating-radial-gradient(white, white 10px, rgba(179, 179, 31, 0.774) 10px, rgba(248, 226, 27, 0.774) 20px);
-    margin: 0;
-    padding: 0;
+
 }
 
 .footer-nav-list{
@@ -231,7 +264,6 @@ p a:hover{
     color: rgb(11, 33, 102);
     font-size: 2rem;
     font-weight: bolder;
-    background-color: rgba(255, 255, 255, 0.5);
 }
 
 
